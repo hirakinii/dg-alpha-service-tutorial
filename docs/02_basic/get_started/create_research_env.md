@@ -59,7 +59,7 @@
 
 研究フロートップページに表示される研究フロー図にて「初期セットアップを行う」をクリックし、初期セットアップ用ノートブック（下図）に遷移します。
 
-![](./images/img5806_desc_researchflow.png)
+![](./images/research_flow_research_env_setting.png)
 
 初期セットアップ用ページでの操作は以下の二つです。
 
