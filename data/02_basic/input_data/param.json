@@ -1,0 +1,53 @@
+{
+    "target": {
+        "atom_number": {
+            "value": 54,
+            "unit": "none",
+            "type": "int"
+        },
+        "crystal_structure": {
+            "value": "fcc",
+            "unit": "none",
+            "type": "str"
+        },
+        "unit_cell_length": {
+            "value": 6.13,
+            "unit": "angstrom",
+            "type": "float"
+        },
+        "crystal_shape": {
+            "value": "sphere",
+            "unit": "none",
+            "type": "str"
+        },
+        "crystal_characteristic_length": {
+            "value": 52.0,
+            "unit": "angstrom",
+            "type": "float"
+        },
+        "miller_index": {
+            "value": [1, 1, 1],
+            "unit": "none",
+            "type": "list"
+        }
+    },
+    "incident_xray_beam": {
+         "wavelength": {
+             "value": 1.1,
+             "unit": "angstrom",
+             "type": "float"
+         }
+    },
+    "momentum_space": {
+        "momentum_max": {
+            "value": 2.5,
+            "unit": "1/angstrom",
+            "type": "float"
+        },
+        "momentum_step": {
+            "value": 0.01,
+            "unit": "1/angstrom",
+            "type": "float"
+        }
+    }
+}
