@@ -32,7 +32,7 @@
 
 ![](./images/research_flow_exp_top_page.png)
 
-実験中は主に実験フロー図（下図）を利用します。
+実験中は主に実験フロー図（下図。「[(先行利用)データガバナンス機能の概要](https://support.rdm.nii.ac.jp/usermanual/58/)」より引用）を利用します。
 
 ![](./images/img5808_exp_flow.png)
 
