@@ -69,7 +69,7 @@ upload data for a tutorial
 
 #### 実験を実施する
 
-Jupyter Noteboo を開き、前のセクションでアップロードしたファイルを以下の順に実行します。
+Jupyter Notebook を開き、前のセクションでアップロードしたファイルを以下の順に実行します。
 
 1. `01_simulation.ipynb`
     * FCC 球状結晶の (111) 面からの Bragg スポットを計算します。
@@ -85,25 +85,25 @@ Jupyter Noteboo を開き、前のセクションでアップロードしたフ�
 
 #### 実験結果を同期する
 
-この操作は[「テスト実験を行う」における「実験結果を研究用リポジトリに同期する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様です。前節の各ノートブック実行ごとに途中結果を同期するのが良いでしょう。コミットメッセージは例えば次のように与えます。
+この操作は[「テスト実験を行う」における「実験結果を研究用リポジトリに同期する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様です。前節の各ノートブック実行ごとに途中結果を同期するのが良いでしょう。今回は各ノートブックの実行後の途中結果の同期時に下表のようにログメッセージを入力します。
 
 |ノートブック|ログメッセージ|
 |:---|:---|
-| `01_simulation.ipynb` | `simulate Bragg spots from nanocrystals` |
-| `02_normalization.ipynb` | `normalize Bragg spot intensity` |
-| `03_calculate_exp_data.ipynb` | `add noise to Bragg spot intensity` |
-| `04_simulate_delay_time.ipynb` | `simulate delay time of each nanocrystal` |
-| `05_arrange_data.ipynb` | `arrange the simulative results` |
+| `01_simulation.ipynb` | `execute a notebook which simulates Bragg spots from nanocrystals` |
+| `02_normalization.ipynb` | `execute a notebook which normalizes Bragg spot intensity` |
+| `03_calculate_exp_data.ipynb` | `execute a notebook which adds noise to Bragg spot intensity` |
+| `04_simulate_delay_time.ipynb` | `execute a notebook which simulates delay time of each nanocrystal` |
+| `05_arrange_data.ipynb` | `execute a notebook which arranges the simulative results` |
 
 なお、同期するデータのサイズが大きいほど、または同期するデータの数が多いほど、同期にかかる時間が長くなります。
 
 #### 実験の説明を記述する
 
-この操作は[「テスト実験を行う」における「実験の説明を記述する」](./carry_out_test_experiment.md#実験の説明を記述する)セクションでの操作と同様です。説明文の一例を「[README.md](../../../data/02_basic/docs/README.md) 」に示します。
+この操作は[「テスト実験を行う」における「実験の説明を記述する」](./carry_out_test_experiment.md#実験の説明を記述する)セクションでの操作と同様です。説明文の一例を「[README.md](../../../data/02_basic/01_main_experiment/docs/README.md) 」に示します。
 
 #### Snakefileに実験手順を記述する
 
-この操作は[「テスト実験を行う」における「Snakefileに実験手順を記述する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様ですSnakefileの一例を「[Snakefile](../../../data/02_basic/docs/Snakefile)」に示します。
+この操作は[「テスト実験を行う」における「Snakefileに実験手順を記述する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様です。Snakefileの一例を「[Snakefile](../../../data/02_basic/01_main_experiment/docs/Snakefile)」に示します。
 
 #### 実験を終了し、実験実行環境を削除する
 
