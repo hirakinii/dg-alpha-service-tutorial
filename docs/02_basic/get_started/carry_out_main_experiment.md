@@ -50,14 +50,14 @@
 ローカル環境からデータを取得手順が「1. ローカル環境から取得」セクションに示されています。それを参考にして、以下のファイルをアップロードします。
 
 * `input_data` ディレクトリへアップロードするファイル：
-    * [param.json](../../../data/02_basic/input_data/param.json)
-    * [param_2.json](../../../data/02_basic/input_data/param.json)
+    * [param.json](../../../data/02_basic/01_main_experiment/input_data/param.json)
+    * [param_2.json](../../../data/02_basic/01_main_experiment/input_data/param_2.json)
 * `source` ディレクトリへアップロードするファイル：
-    * [01_simulation.ipynb](../../../data/02_basic/source/01_simulation.ipynb)
-    * [02_normalization.ipynb](../../../data/02_basic/source/02_normalization.ipynb)
-    * [03_calculate_exp_data.ipynb](../../../data/02_basic/source/03_calculate_exp_data.ipynb)
-    * [04_simulate_delay_time.ipynb](../../../data/02_basic/source/04_simulate_delay_time.ipynb)
-    * [05_arrange_data.ipynb](../../../data/02_basic/source/05_arrange_data.ipynb)
+    * [01_simulation.ipynb](../../../data/02_basic/01_main_experiment/source/01_simulation.ipynb)
+    * [02_normalization.ipynb](../../../data/02_basic/01_main_experiment/source/02_normalization.ipynb)
+    * [03_calculate_exp_data.ipynb](../../../data/02_basic/01_main_experiment/source/03_calculate_exp_data.ipynb)
+    * [04_simulate_delay_time.ipynb](../../../data/02_basic/01_main_experiment/source/04_simulate_delay_time.ipynb)
+    * [05_arrange_data.ipynb](../../../data/02_basic/01_main_experiment/source/05_arrange_data.ipynb)
 
 上記ファイルのアップロードが完了したら、「2. 作業ログメッセージの入力」セクションのセルを実行します。現れたフォームに以下のログメッセージを残し、「入力完了」ボタンをクリックします。
 

@@ -69,7 +69,7 @@ URL 入力後、「入力完了」ボタンをクリックします。
 
 この操作は[「本実験を行う」における「実験用データをアップロードする」](./carry_out_main_experiment.md#実験用データをアップロードする)セクションでの操作と同様です。今回は `source` ディレクトリに以下のノートブックをアップロードします。
 
-* [06_determine_center_of_image.ipynb](../../../data/02_basic/source/06_determine_center_of_image.ipynb)
+* [06_determine_center_of_image.ipynb](../../../data/02_basic/02_first_analysis/source/06_determine_center_of_image.ipynb)
 
 ログメッセージとして以下を入力します。
 
