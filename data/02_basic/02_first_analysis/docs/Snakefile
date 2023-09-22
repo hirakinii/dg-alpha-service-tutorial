@@ -1,0 +1,5 @@
+rule 06_determine_center_of_image:
+    output:
+        "./output_data/result.pickle"
+    notebook:
+        "./source/06_determine_center_of_image.ipynb"
