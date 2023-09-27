@@ -21,7 +21,7 @@
             "type": "str"
         },
         "crystal_characteristic_length": {
-            "value": 52.0,
+            "value": 112.0,
             "unit": "angstrom",
             "type": "float"
         },
@@ -40,7 +40,7 @@
     },
     "momentum_space": {
         "momentum_max": {
-            "value": 2.5,
+            "value": 2.0,
             "unit": "1/angstrom",
             "type": "float"
         },
