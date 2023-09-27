@@ -21,8 +21,6 @@ This experiment has the following input data:
 
 * [param.json](./input_data/param.json)
     * This file includes parameters for simulation of Bragg reflection.
-* [param_2.json](./input_data/param_2.json)
-    * This file includes parameters for simulation of Bragg reflection under another condition.
 
 ## output_data
 
