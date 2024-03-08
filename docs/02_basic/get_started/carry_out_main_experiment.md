@@ -2,18 +2,17 @@
 
 本ステップでは、本チュートリアルが想定する研究テーマに沿って実験を行います。本ステップでは以下を体験していただきます。
 
-* [「テスト実験を行う」](./carry_out_test_experiment.md)で学習した本サービスをりようする実験実行環境の構築～実験終了の操作を復習する。
+* [「テスト実験を行う」](./carry_out_test_experiment.md)で学習した本サービスを利用する実験実行環境の構築～実験終了の操作を復習する。
 * ローカル環境から実験実行環境へファイルをアップロードする。
 
 本ステップで実践する手順を以下に示します。
 
 1. [実験実行環境を構築する](#実験実行環境を構築する)
-2. [実験用データをアップロードする](#実験用データをアップロードする)
-3. [実験を実施する](#実験を実施する)
+1. [実験用データをアップロードする](#実験用データをアップロードする)
+1. [実験を実施する](#実験を実施する)
 1. [実験の説明を記述する](#実験の説明を記述する)
-1. [Snakefileに実験手順を記述する](#Snakefileに実験手順を記述する)
-4. [実験結果を同期する](#実験結果を同期する)
-5. [実験を終了し、実験実行環境を削除する](#実験を終了し、実験実行環境を削除する)
+1. [実験結果を同期する](#実験結果を同期する)
+<!-- 1. [実験を終了し、実験実行環境を削除する](#実験を終了し、実験実行環境を削除する) -->
 
 #### 本ステップを実施する前に
 
@@ -28,44 +27,56 @@
 実験実行環境の構築手順は「テスト実験を行う」で実施した手順と同様です。以下を順に参照して実験実行環境の構築および初期セットアップを完了してください。
 
 1. [テスト実験：実験実行環境を構築する](./carry_out_test_experiment.md#実験実行環境を構築する)
-    * 今回は `01_main_experiment` を実験パッケージ名として設定します。
-1. [テスト実験：実験の初期セットアップを行う](./carry_out_test_experiment.md#実験の初期セットアップを行う)
+    * 今回は `experiment_main` をサブフロー名、`experiment_main_data` をデータディレクトリ名として設定します。
+1. [テスト実験：実験パッケージの構成を用意する](./carry_out_test_experiment.md#実験パッケージの構成を用意する)
+    * 今回は `Experiment Main` を project_name 、`experiment_main` を project_slug として設定します。
 
-実験実行環境の初期セットアップまで完了したら、実験フロートップページに遷移します。
+実験実行環境の「実験パッケージの構成を用意」まで完了したら、実験サブフローメニューに遷移します。
 
 #### 実験用データをアップロードする
 
-実験フロートップページにある実験フロー中の「実験のデータやソースコードを用意する」をクリックし、データ準備用のノートブック（下図）に遷移します。
+実験サブフローメニューにあるフロー中の「実験に利用するデータを用意する」をクリックし、データ準備用のノートブック（下図）に遷移します。
 
-![](./images/research_flow_exp_prepare_data.png)
+![](./images/carry_out_main_prepare_data.png)
+<!-- ![](./images/research_flow_exp_prepare_data.png) -->
 
-共通メニューは適宜ご利用下さい。今回はローカル環境からデータをアップロードする手順を実施しますので、「C：ローカル環境より取得」セクションのセルを実行します。すると「『ローカル環境からデータを用意する』の実行画面に遷移する」ボタンが出現します（下図参照）。
+今回はローカル環境からデータをアップロードしますので、「1-2. ローカルPCから実験に利用するデータを用意する」セクションの手順を実施します。
+<!-- すると「『ローカル環境からデータを用意する』の実行画面に遷移する」ボタンが出現します（下図参照）。 -->
 
-![](./images/research_flow_exp_prepare_data_c.png)
+<!-- ![](./images/research_flow_exp_prepare_data_c.png) -->
 
-このボタンをクリックし、ローカル環境からデータを用意するためのノートブック（下図）に遷移します。
+<!-- このボタンをクリックし、ローカル環境からデータを用意するためのノートブック（下図）に遷移します。 -->
 
-![](./images/research_flow_exp_prepare_data_from_local.png)
+<!-- ![](./images/research_flow_exp_prepare_data_from_local.png) -->
 
-ローカル環境からデータを取得手順が「1. ローカル環境から取得」セクションに示されています。それを参考にして、以下のファイルをアップロードします。
+1. ダッシュボードビューを開く
+    - ページ左上部の「File」をクリック後、「Open...」をクリックします。
 
-* `input_data` ディレクトリへアップロードするファイル：
-    * [param.json](../../../data/02_basic/01_main_experiment/input_data/param.json)
-    * [param_2.json](../../../data/02_basic/01_main_experiment/input_data/param_2.json)
-* `source` ディレクトリへアップロードするファイル：
-    * [01_simulation.ipynb](../../../data/02_basic/01_main_experiment/source/01_simulation.ipynb)
-    * [02_normalization.ipynb](../../../data/02_basic/01_main_experiment/source/02_normalization.ipynb)
-    * [03_calculate_exp_data.ipynb](../../../data/02_basic/01_main_experiment/source/03_calculate_exp_data.ipynb)
-    * [04_simulate_delay_time.ipynb](../../../data/02_basic/01_main_experiment/source/04_simulate_delay_time.ipynb)
-    * [05_arrange_data.ipynb](../../../data/02_basic/01_main_experiment/source/05_arrange_data.ipynb)
+        ![](./images/carry_out_main_prepare_data_from_local01.png)
+2. アップロードする場所を開く
+    - 左上部の<img src="./images/carry_out_main_prepare_data_from_local_folder_icon.png" height="15">→「data」→「experiment」→「experiment_main_data」→「experiment_main」の順序でクリックします。
 
-上記ファイルのアップロードが完了したら、「2. 作業ログメッセージの入力」セクションのセルを実行します。現れたフォームに以下のログメッセージを残し、「入力完了」ボタンをクリックします。
+3. 対応するディレクトリに移動し、右上の「Upload」をクリックし、以下のファイルをアップロードします。
 
-```markdown
+    * `input_data` ディレクトリへアップロードするファイル：
+        * [param.json](../../../data/02_basic/01_main_experiment/input_data/param.json)
+        * [param_2.json](../../../data/02_basic/01_main_experiment/input_data/param_2.json)
+    * `source` ディレクトリへアップロードするファイル：
+        * [01_simulation.ipynb](../../../data/02_basic/01_main_experiment/source/01_simulation.ipynb)
+        * [02_normalization.ipynb](../../../data/02_basic/01_main_experiment/source/02_normalization.ipynb)
+        * [03_calculate_exp_data.ipynb](../../../data/02_basic/01_main_experiment/source/03_calculate_exp_data.ipynb)
+        * [04_simulate_delay_time.ipynb](../../../data/02_basic/01_main_experiment/source/04_simulate_delay_time.ipynb)
+        * [05_arrange_data.ipynb](../../../data/02_basic/01_main_experiment/source/05_arrange_data.ipynb)
+
+<!-- 上記ファイルのアップロードが完了したら、「2. 作業ログメッセージの入力」セクションのセルを実行します。現れたフォームに以下のログメッセージを残し、「入力完了」ボタンをクリックします。 -->
+
+<!-- ```markdown
 upload data for a tutorial
-```
+``` -->
 
-後はセクション 3 ~ 5 を順番実行します。その後実験フロートップページに遷移します。
+後はセクション 3 ~ 5 を順番に実行します。その後実験フロートップページに遷移します。
+
+<!-- [前のステップ](./carry_out_test_experiment.md)を参考に実験を行い、実験サブフローメニューに遷移します。 -->
 
 #### 実験を実施する
 
@@ -101,19 +112,15 @@ Jupyter Notebook を開き、前のセクションでアップロードしたフ
 
 この操作は[「テスト実験を行う」における「実験の説明を記述する」](./carry_out_test_experiment.md#実験の説明を記述する)セクションでの操作と同様です。説明文の一例を「[README.md](../../../data/02_basic/01_main_experiment/docs/README.md) 」に示します。
 
-#### Snakefileに実験手順を記述する
+<!-- #### 実験を終了し、実験実行環境を削除する
 
-この操作は[「テスト実験を行う」における「Snakefileに実験手順を記述する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様です。Snakefileの一例を「[Snakefile](../../../data/02_basic/01_main_experiment/docs/Snakefile)」に示します。
-
-#### 実験を終了し、実験実行環境を削除する
-
-この操作は[「テスト実験を行う」における「実験を終了し、実験実行環境を削除する」](./carry_out_test_experiment.md#実験を終了し、実験実行環境を削除する)セクションでの操作と同様です。
+この操作は[「テスト実験を行う」における「実験を終了し、実験実行環境を削除する」](./carry_out_test_experiment.md#実験を終了し、実験実行環境を削除する)セクションでの操作と同様です。 -->
 
 #### まとめ
 
 本ステップでは以下を体験していただきつつ、[本章が扱う研究テーマ](./top.md#本章が扱う研究テーマ)に沿って X 銭広角散乱信号の模擬データを生成しました。
 
-* [「テスト実験を行う」](./carry_out_test_experiment.md)で学習した本サービスをりようする実験実行環境の構築～実験終了の操作を復習する。
+* [「テスト実験を行う」](./carry_out_test_experiment.md)で学習した本サービスを利用する実験実行環境の構築～実験終了の操作を復習する。
 * ローカル環境から実験実行環境へファイルをアップロードする。この操作において、本サービスはアップロードされたデータを研究用リポジトリに同期して管理することを実現します。
 
-本ステップを完了したら[次のステップに進みましょう](./validate_metadata.md)。
+本ステップを完了したら[次のステップに進みましょう](./carry_out_analysis.md.md)。

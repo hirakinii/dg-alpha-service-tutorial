@@ -1,89 +1,166 @@
 ### 研究実行環境を構築する
 
-本ステップでは[前のステップ](./create_research_env.md)で生成された maDMP を利用して研究実行環境の構築および初期設定を行います。本ステップで実践する手順を以下に示します。
+本ステップでは[前のステップ](./create_dmp.md)で生成された DMP（プロジェクトメタデータ）を利用して研究実行環境の構築および初期設定を行います。本ステップで実践する手順を以下に示します。
 
+
+1. [事前準備](#事前準備)
 1. [研究実行環境を構築する](#研究実行環境を構築する)
-1. [MaDMPを実行する](#MaDMPを実行する)
 1. [研究実行環境の初期セットアップを行う](#研究実行環境の初期セットアップを行う)
 
 #### 本ステップで体験していただくこと
 
-* (Ma)DMP に基づき GRDM のコード付帯機能を利用する研究実行環境の構築。
+* GRDM のコード付帯機能を利用する研究実行環境の構築。
 
-#### MaDMPを基に研究実行環境を構築する
+#### 事前準備
 
-研究用リポジトリのトップページにある「container list」をクリックし、コンテナリストのページに遷移します。MaDMP 作成後は下図に示されるようなページが表示されるはずです。
+研究用プロジェクトの右上部にあるご自身の名前から、「設定」をクリックします。
 
-![](./images/container_list_after_madmp_creation.png)
+![](./images/create_research_env_prepare01.png)
 
-「container list」ページにて「container.madmp」ボタンをクリックします。それにより、GRDM のコード付帯機能を利用して研究実行環境の構築が開始します。このとき下図のように、構築状況を確認できるページがブラウザの別タブで開き、そのタブに自動的に遷移します。研究実行環境の構築には 5 ~ 10 分かかることがあります。
+左部にある「設定」メニュー（下図）から、「パーソナルアクセストークン」をクリックします。
 
-![](./images/creating_research_env.png)
+![](./images/create_research_env_prepare02.png)
 
-研究実行環境が構築されると、研究実行環境内の Jupyter Notebook にて `maDMP.ipynb` が開かれます（下図）。
+パーソナルアクセストークンを発行します。「パーソナルアクセストークン」の右部にある「新規トークン」をクリックします。
 
-![](./images/madmp_in_research_env.png)
+![](./images/create_research_env_prepare03.png)
 
-#### MaDMPを実行する
+トークン名に任意の名前（本チュートリアルでは「tutorial_token」とします）を入力し、全てのスコープにチェックを付けます。
 
-`maDMP.ipynb` には以下の手順が実装されています。
+![](./images/create_research_env_prepare04.png)
 
-1. DMP 情報の取り込み。DMP 中の以下の情報を研究実行環境に取り込みます。
-    * workflowIdentifier
-    * contentSize
-    * datasetStructure
-    * useDocker
-1. リサーチフローの作成
-1. GIN-fork アクセス準備
+「作成」をクリックします。トークンIDは[後のステップ](#研究実行環境の初期セットアップを行う)で使用するため、メモしてください。**この画面を離れると、トークンは二度と表示されません。**
 
-前節の最後に開かれた `maDMP.ipynb` のページにて上から順にセルを実行することで処理が進みます。セルの実行方法は Jupyter Notebook における通常のセルの実行方法と同じです。全てのセルの実行が完了すると下図のようになります。
+ページ左上部の「GakuNin RDM」からダッシュボードに遷移し、作成した研究用プロジェクトに戻ります。
 
-![](./images/madmp_in_research_env_after_execution.png)
+#### 研究実行環境を構築する
 
-ページの下方に出力される「研究フロートップページに遷移する」をクリックし、リサーチフローの研究フロートップページ（下図）に遷移します。
+研究用プロジェクトの上部にある「アドオン」タブをクリックします。「アドオンを選択」から、「GakuNin Federated Computing Services (Jupyter)」を有効化します。
 
-![](./images/research_flow_top.png)
+![](./images/create_research_env_enable_addon01.png)
+![](./images/create_research_env_enable_addon02.png)
+![](./images/create_research_env_enable_addon03.png)
 
-2023/8/30 時点で、研究フロートップページは以下の二つの操作に対応するセルで構成されます。
+アドオンを有効化したことにより、ページ上部に「解析」タブが出現します。「解析」タブをクリックします。
 
-* 共通メニュー。このセルを実行することで以下の二つの操作を行うプルダウンメニューが表示されます。
-    * 研究リポジトリ名を確認する。研究リポジトリ名が表示されます。
-    * GIN-fork に遷移する。研究用リポジトリに遷移します。
-* 研究フロー図。主にこちらを使用します。
+![](./images/create_research_env_create_env01.png)
 
-このページでもセルを上から実行するだけで処理が進みます。セルの実行が完了すると、ページ中に下図（「[(先行利用)データガバナンス機能の概要](https://support.rdm.nii.ac.jp/usermanual/58/)」より引用）のような研究フロー図が表示されます。
+ページ右側の「`新しい解析環境を作成: https://binder.cs.rcos.nii.ac.jp`」をクリックします。ビルド状況が「ready」になるまでお待ちください。
 
-![](./images/img5806_desc_researchflow.png)
+![](./images/create_research_env_create_env02.png)
+![](./images/create_research_env_create_env03.png)
+
+この操作により、ページ上部の「私の解析環境」に解析環境が出現します。
+
+![](./images/create_research_env_create_env04.png)
+
+「起動」にある![](./images/create_research_env_create_env_jupyter_icon.png)アイコンをクリックすることで、作成した解析環境に遷移します。
+
+![](./images/create_research_env_create_env05.png)
+
+「data_gorvernance」フォルダ、「researchflow」フォルダを開き、「main.ipynb」をクリックし、メインメニューに遷移します。
+
+![](./images/create_research_env_create_env06.png)
+![](./images/create_research_env_create_env07.png)
+![](./images/create_research_env_create_env08.png)
 
 #### 研究実行環境の初期セットアップを行う
 
-研究フロートップページに表示される研究フロー図にて「初期セットアップを行う」をクリックし、初期セットアップ用ノートブック（下図）に遷移します。
+前節の最後に開かれたメインメニューのページにて、上から順にセルを実行することで処理が進みます。セルの実行方法は Jupyter Notebook における通常のセルの実行方法と同じです。セルの実行が完了すると下図のようになります。
 
-![](./images/research_flow_research_env_setting.png)
+![](./images/create_research_env_setup01.png)
 
-初期セットアップ用ページでの操作は以下の二つです。
+「サブフロー関係図」の「研究準備」の<img src="./images/create_research_env_setup_prepare_node.png" height="15">をクリックし、研究準備サブフローメニューに遷移します。
 
-1. 上から順にセルを実行する。
-1. 研究用リポジトリへの同期のためのGIN-forkアカウント情報を入力する。
+![](./images/create_research_env_setup02.png)
 
-このセットアップにより、研究用リポジトリの container list に研究実行環境が追加されます。それでは上から順にセルを実行しましょう。途中で下図のようにアカウント情報を求められますので、手動で入力して「入力を完了する」ボタンをクリックしてください。
+「サブフローメニューを表示」のコードセルを実行し、サブフローメニューを表示します。
 
-![](./images/research_flow_research_env_setting_before_authentication.png)
+![](./images/create_research_env_setup03.png)
 
-入力されたアカウント情報に基づき認証が成功すると下図のようにボタンの表示が変わります。
+背景が黄色となっているフロー図に従って操作を行います。「研究データ管理計画を立てる」をクリックし、次のフローに遷移します。
 
-![](./images/research_flow_research_env_setting_after_authentication.png)
+![](./images/create_research_env_setup04.png)
 
-残りのセルを上から順に全て実行します。最後のセルの実行結果に「研究フロートップページに遷移する」ボタンが表示されます（下図）。このボタンをクリックして研究フロートップページに遷移します。
+上から順にセルを実行します。
 
-![](./images/research_flow_research_env_setting_after_all_execution.png)
+![](./images/create_research_env_setup05.png)
 
-研究フロートップページにて研究フロー図を更新すると、研究フロー図中の「初期セットアップを行う」に「済」の印が付きます（下図）。
+「1. 研究データ管理計画（DMP）を取得する」では、[前のステップ](./create_dmp.md)で生成された DMP（プロジェクトメタデータ）を利用します。表示されたテキストボックスに[事前準備](#事前準備)で作成したパーソナルアクセストークンを入力します。
 
-![](./images/research_flow_top_flow_diagram_after_initial_setting.png)
+![](./images/create_research_env_setup06.png)
+
+作成した研究用プロジェクトが表示されます。研究用プロジェクトを選択し、「選択」をクリックします。
+
+![](./images/create_research_env_setup07.png)
+
+「2. DGカスタマイズプロパティの設定」のコードセルを実行します。表示された全てのチェックボックスにチェックを入れ、![](./images/create_research_env_setup_icon_submit.png)をクリックします。
+
+![](./images/create_research_env_setup_dg_property.png)
+
+「3. GRDMに実行結果を同期」のコードセルを実行します。
+
+![](./images/create_research_env_setup_save_grdm.png)
+
+表示されたテキストボックスに[事前準備](#事前準備)で作成したパーソナルアクセストークンを入力します。
+
+![](./images/create_research_env_setup_save_grdm02.png)
+
+「保存する」をクリックし、完了するまで待機します。
+
+「サブフローメニューへ」のコードセルを実行し、サブフローメニューに遷移します。
+再度「サブフローメニューを表示」のコードセルを実行し、サブフローメニューを表示します。完了したフローには青いチェックマークが表示されます。
+
+![](./images/create_research_env_setup08.png)
+
+「解析環境を構築する」をクリックし、次のフローに遷移します。
+
+![](./images/create_research_env_setup09.png)
+
+「1. OCSテンプレートの取得をする」のコードセルを実行し、実行が完了するまで待機します。
+
+![](./images/create_research_env_setup10.png)
+
+「2. 解析環境を構築する環境を準備する」のコードセルを実行し、本チュートリアルでは「その他」を選択します。
+
+![](./images/create_research_env_setup11.png)
+
+
+「3. 解析環境の構築手順を選択する」のコードセルを実行し、本チュートリアルでは「Gakunin RDMの解析基盤を利用する」を選択します。
+
+![](./images/create_research_env_setup12.png)
+
+
+「4. 構築手順を保存する」のコードセルを実行し、実行が完了するまで待機します。
+
+「5.Gakunin RDMに実行結果を同期」のコードセルを実行します。
+
+![](./images/create_research_env_setup13.png)
+
+表示されたテキストボックスに[事前準備](#事前準備)で作成したパーソナルアクセストークンを入力します。
+
+![](./images/create_research_env_setup14.png)
+
+「保存する」をクリックし、完了するまで待機します。
+
+「サブフローメニューへ」のコードセルを実行し、サブフローメニューに遷移します。
+
+![](./images/create_research_env_setup15.png)
+
+サブフローメニューを表示し、完了した2つのフローに青いチェックマークが付いていることを確認します。
+
+「メインメニューへ」のコードセルを実行し、メインメニューへ遷移します。
+
+![](./images/create_research_env_setup16.png)
+
+「メインメニューを表示」のコードセルを実行します。
+
+![](./images/create_research_env_setup17.png)
+
+「アクションを選択してください」を表示され、サブフローの操作が可能になっていることを確認します。
 
 #### まとめ
 
-本ステップでは研究実行環境を構築する方法を試しました。自身で同じことをしようとすると、秘密鍵の設定やら git コマンドの利用やらの手間がかかります。本サービスではそれらを自動化し、ユーザーの操作を簡便化（少しの入力とボタンクリックのみ）しております。
+本ステップでは研究実行環境を構築する方法を試しました。自身で同じことをしようとすると、秘密鍵の設定や、 git コマンドの利用などの手間がかかります。本サービスではそれらを自動化し、ユーザーの操作を簡便化（少しの入力とボタンクリックのみ）しております。
 
 本ステップを完了したら[次のステップに進みましょう](./carry_out_test_experiment.md)。
