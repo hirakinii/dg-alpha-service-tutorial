@@ -70,7 +70,7 @@ DG-Webでは、よく使われるルールの組み合わせをプリセット�
 <tr><td colspan=2>メールアドレス</td></tr>
 <tr><td>機関情報</td><td colspan=2>機関名</td></tr>
 <tr><td>資金配分機関情報</td><td colspan=2>資金配分機関名</td></tr>
-<tr><td rowspan=2>コードの再実行性</td><td>再現性のレベル</td><td>設定しない</td></tr>
+<tr><td rowspan=2>コードの再実行性</td><td>再実行性のレベル</td><td>設定しない</td></tr>
 <tr><td>再実行検証で利用するファイルバージョン</td><td>最新バージョン</td>
 </tbody>
 </table>
