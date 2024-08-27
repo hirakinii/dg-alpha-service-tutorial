@@ -70,34 +70,42 @@
 
 前節の最後に開かれたメインメニューのページにて、上から順にセルを実行することで処理が進みます。セルの実行方法は Jupyter Notebook における通常のセルの実行方法と同じです。セルの実行が完了すると下図のようになります。
 
-![](./images/create_research_env_setup01.png)
+| ![](./images/create_research_env_setup01.png) |
+|---|
 
 「サブフロー関係図」の「研究準備」の<img src="./images/create_research_env_setup_prepare_node.png" height="15">をクリックし、研究準備サブフローメニューに遷移します。
 
-![](./images/create_research_env_setup02.png)
+| ![](./images/create_research_env_setup02.png) |
+|---|
 
 「サブフローメニューを表示する」のコードセルを実行し、サブフローメニューを表示します。
 
-![](./images/create_research_env_setup03.png)
+| ![](./images/create_research_env_setup03.png) |
+|---|
 
 #### ガバナンスシートを登録する
 
 背景が黄色となっているフロー図に従って操作を行います。「ガバナンスシートを登録する」をクリックし、次のフローに遷移します。
 
-![](./images/create_research_env_setup04.png)
-![](./images/create_research_env_setup05.png)
+| ![](./images/create_research_env_setup04.png) |
+|---|
+| ![](./images/create_research_env_setup05.png) |
+|---|
 
 「ガバナンスシート登録フォームを表示する」のセルを実行します。「パーソナルアクセストークンを入力してください：」と表示された場合は[パーソナルアクセストークンを発行する](./create_project.md#パーソナルアクセストークンを発行する)で作成したパーソナルアクセストークンを入力します。
 
-![](./images/create_research_env_setup06.png)
+| ![](./images/create_research_env_setup06.png) |
+|---|
 
 ガバナンスシート登録フォームが表示されます。
 
-![](./images/create_research_env_setup07.png)
+| ![](./images/create_research_env_setup07.png) |
+|---|
 
 セルの左端にカーソルを合わせると「click to scroll output, double click to hide」と表示されます。セルをクリックしてフォームの全体を表示します。
 
-![](./images/create_research_env_setup08.png)
+| ![](./images/create_research_env_setup08.png) |
+|---|
 
 データ管理計画としてフェーズに沿った項目にチェックをしていきます。
 
@@ -123,23 +131,27 @@
 
 「保存する」をクリックします。
 
-![](./images/create_research_env_setup09.png)
+| ![](./images/create_research_env_setup09.png) |
+|---|
 
 「同期中です。しばらくお待ちください。」と表示されますのでしばらくお待ちください。「ガバナンスシートを保存しました。」と表示されたら完了です。
 
 ガバナンスシートは、Gakunin RDMの/.dg/gov-sheet.jsonに保存されます。解析環境には保存されませんのでご注意ください。
 
-![](./images/create_research_env_setup10.png)
+| ![](./images/create_research_env_setup10.png) |
+|---|
 
 「サブフローメニューを表示する」をクリックし、サブフローメニューへ遷移します。
 
-![](./images/create_research_env_setup11.png)
+| ![](./images/create_research_env_setup11.png) |
+|---|
 
 サブフローメニューへ遷移後、再度「サブフローメニューを表示する」のコードセルを実行し、サブフローメニューを表示します。
 
 完了したタスクには青いチェックマークが表示されます。ガバナンスシートの登録を実施すると、次のタスクである「解析環境を構築する」が実行可能になります。
 
-![](./images/create_research_env_setup12.png)
+| ![](./images/create_research_env_setup12.png) |
+|---|
 
 #### まとめ
 
