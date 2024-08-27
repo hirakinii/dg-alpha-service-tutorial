@@ -16,11 +16,13 @@
 
 「メインメニューを表示」のコードセルを実行し、メインメニューを表示します。
 
-![](./images/carry_out_test_prepare_main_menu.png)
+| ![](./images/carry_out_test_prepare_main_menu.png) |
+|---|
 
 「サブフロー操作」下部のプルダウンから、「サブフロー新規作成」を選択します。
 
-![](./images/carry_out_test_prepare_create_sub.png)
+| ![](./images/carry_out_test_prepare_create_sub.png) |
+|---|
 
 サブフローの詳細設定を行います。本チュートリアルでは以下のように入力します。
 
@@ -34,31 +36,37 @@
 
 設定項目をすべて入力後、「＋新規作成」をクリックします。
 
-![](./images/carry_out_test_prepare_create_ex_node.png)
+| ![](./images/carry_out_test_prepare_create_ex_node.png) |
+|---|
 
 「サブフロー関係図」の「実験」にある<img src="./images/carry_out_test_prepare_ex_node_icon.png" height=15>をクリックし、実験サブフローメニューに遷移します。
 
-![](./images/carry_out_test_ex_sub_flow_menu.png)
+| ![](./images/carry_out_test_ex_sub_flow_menu.png) |
+|---|
 
 研究準備と同様に、背景が黄色となっているフロー図（下図）に従って操作を行います。
 
-![](./images/carry_out_test_ex_sub_flow.png)
+| ![](./images/carry_out_test_ex_sub_flow.png) |
+|---|
 
 #### 実験パッケージの構成を用意する
 
 「実験パッケージの構成を用意する」をクリックします。
 
-![](./images/carry_out_test_ex_prepare_env.png)
+| ![](./images/carry_out_test_ex_prepare_env.png) |
+|---|
 
 「実験パッケージを選択する」のコードセルを実行します。
 
-![](./images/carry_out_test_ex_prepare_env_01.png)
+| ![](./images/carry_out_test_ex_prepare_env_01.png) |
+|---|
 
 「研究分野」はプルダウンから「ライフサイエンス」を選択し、「推奨実験パッケージの利用有無」は「利用する（デフォルト）」とします。「確定」をクリックします。
 
 処理が完了すると下図のように表示されます。
 
-![](./images/carry_out_test_ex_prepare_env_cookiecutter.png)
+| ![](./images/carry_out_test_ex_prepare_env_cookiecutter.png) |
+|---|
 
 本チュートリアルでは各データを下表のように変更します。
 
@@ -75,45 +83,55 @@
 
 入力が完了したら「確定」をクリックします。「実験パッケージを/home/jovyan/data/experiment/experiment_test_dataに作成しました。」と表示されれば完了です。
 
-本ステップで作成した実験パッケージはjyupyterの以下のディレクトリに作成されます。
+本ステップで作成した実験パッケージはjupyterの以下のディレクトリに作成されます。
 
 📁/data/experiment/experiment_test_data/experiment_test
 
-![](./images/xxx.png)
+| ![](./images/carry_out_test_ex_prepare_env_cookiecutter_02.png) |
+|---|
 
 実験パッケージの作成が完了後、「Gakunin RDMに保存する」のコードセルを実行します。
 
-![](./images/carry_out_test_ex_prepare_env_02.png)
+★差し替え予定
+| ![](./images/carry_out_test_ex_prepare_env_02.png) |
+|---|
 
 テキストボックスが表示された場合、パーソナルアクセストークンを入力し、「保存する」をクリックします。
 
 「Gakunin RDMへの同期が完了しました。」と表示されるまで待機し、サブフローメニューへ戻ります。
 
-![](./images/carry_out_test_ex_sub_flow_01.png)
+| ![](./images/carry_out_test_ex_sub_flow_01.png) |
+|---|
 
 サブフロー図の「実験パッケージの構成を用意する」に青いチェックマークが付いていることを確認します。
 
 #### 実験に利用するデータを用意する
 
-サブフロー図中の「実験に利用するデータを用意する」をクリックすると、本サービスを利用する実験に利用するデータを用意するページ（下図）にアクセスすることができます。本ステップはテスト実験のためスキップします。サブフロートップページに戻りたい場合は、そのノートブックの最後のセルを実行することで現れる「サブフローメニューへアクセス」をクリックしてください。
+サブフロー図中の「実験に利用するデータを用意する」をクリックすると、本サービスを利用する実験に利用するデータを用意するページ（下図）にアクセスすることができます。
 
-![](./images/carry_out_test_ex_prepare_data.png)
+本ステップはテスト実験のためスキップします。サブフロートップページに戻りたい場合は、そのノートブックの最後のセルを実行することで現れる「サブフローメニューへアクセス」をクリックしてください。
+
+| ![](./images/carry_out_test_ex_prepare_data.png) |
+|---|
 
 #### 実験の進め方を確認する
 
 サブフロー図中の「解析処理を実施する」をクリックします。
 
-![](./images/carry_out_test_ex_analysis.png)
+| ![](./images/carry_out_test_ex_analysis.png) |
+|---|
 
 こちらのページでは、分析手法やツールの択などを確認することができます。必要に応じてご活用ください。
 
 「解析処理を実施するフォルダを表示する」のコードセルを実行します。
 
-![](./images/carry_out_test_ex_analysis_access_folder.png)
+| ![](./images/carry_out_test_ex_analysis_access_folder.png) |
+|---|
 
 表示された「データフォルダを表示する」をクリックします。
 
-![](./images/carry_out_test_ex_analysis_data_folder.png)
+| ![](./images/carry_out_test_ex_analysis_data_folder.png) |
+|---|
 
 実験用ディレクトリにアクセスすることができます。
 experiment_test ディレクトリに移動します。ここで、以下のディレクトリを作成します。
@@ -125,18 +143,23 @@ experiment_test ディレクトリに移動します。ここで、以下のデ�
 
 ページ右上にある「New」プルダウンメニューを開きます。その中の「Folder」をクリックすると、新しく `Untitled Folder` という名前のフォルダが作成されます。フォルダを新しく3つ作成し、それぞれ上記の名前に変更します。
 
-![](./images/carry_out_test_ex_analysis_data_folder_in_ex_test.png)
+| ![](./images/carry_out_test_ex_analysis_data_folder_in_ex_test.png) |
+|---|
 
 #### ノートブックを作成して計算を実行する
 
 source ディレクトリに移動します。ページ右上にある「New」プルダウンメニューを開きます。その中の「Python3 (ipykernel)」をクリックすると、新しくノートブック `Untitled.ipynb` が作成され、別タブで開かれます（下図参照）。
 
-![](./images/carry_out_test_ex_analysis_source_new.png)
+| ![](./images/carry_out_test_ex_analysis_source_new.png) |
+|---|
 
 このノートブックは通常の Jupyter Notebook のそれと同じように操作することが可能です。ノートブックページの左上にノートブックの名前が表示されています。その名前をクリックし、`hello_world` に変更します。
 
-![](./images/carry_out_test_ex_analysis_source_new_rename01.png)
-![](./images/carry_out_test_ex_analysis_source_new_rename02.png)
+| ![](./images/carry_out_test_ex_analysis_source_new_rename01.png) |
+|---|
+
+| ![](./images/carry_out_test_ex_analysis_source_new_rename02.png) |
+|---|
 
 最初のセルで NumPy モジュールをインポートして正弦関数を計算してみましょう。以下のコードをセルに入力し、そのセルを実行します：
 
@@ -169,7 +192,8 @@ np.save("../output_data/hello_world_y.npy", y)
 
 テスト実験は以上となります。上記手順通りにテスト実験を実施すると、`hello_world.ipynb` は下図のような状態になります。
 
-![](./images/carry_out_test_ex_analysis_source_new_executed.png)
+| ![](./images/carry_out_test_ex_analysis_source_new_executed.png) |
+|---|
 
 #### 実験結果をプロジェクトに同期する
 
@@ -180,9 +204,24 @@ np.save("../output_data/hello_world_y.npy", y)
 
 今回は頻繁に発生すると考えられる途中保存を実行します。
 
-サブフローメニューのフロー図中の「解析結果を参照する」をクリックします。
+実験の進め方を確認するで遷移した「解析処理を実施する」のタスクに戻ります。
 
-![](./images/carry_out_test_ex_analysis_result.png)
+| ![](./images/carry_out_test_ex_analysis_02.png) |
+|---|
+
+「Gakunin RDMに保存する」のコードセルを実行します。テキストボックスが表示された場合、パーソナルアクセストークンを入力し、「保存する」をクリックします。「Gakunin RDMへの同期が完了しました。」が表示されたら同期成功です。
+
+※同期完了まで10分～15分程度時間がかかります。
+
+同期完了後、「サブフローメニューを表示する」のセルを実行し、サブフローメニューへ遷移します。
+
+| ![](./images/carry_out_test_ex_sub_flow_01.png) |
+|---|
+
+同様に、サブフローメニューのフロー図中の「解析結果を参照する」で同期することもできます。
+
+| ![](./images/carry_out_test_ex_analysis_result.png) |
+|---|
 
 「実験フォルダを開く」では、実験で使用したディレクトリを開くことができます。
 
@@ -197,7 +236,8 @@ np.save("../output_data/hello_world_y.npy", y)
 「実験フォルダを開く」から、実験用ディレクトリにアクセスし、 experiment_test ディレクトリに移動し、 `README.rst` をクリックして開きます。
 ページ右上にある「New」プルダウンメニューを開きます。その中の「Text File」をクリックすると、新しくノートブック `untitled.txt` が作成され、別タブで開かれます。
 
-![](./images/carry_out_test_ex_analysis_source_create_readme.png)
+| ![](./images/carry_out_test_ex_analysis_source_create_readme.png) |
+|---|
 
 開かれたノートブックのタイトルを`README.md`に変更します。
 
