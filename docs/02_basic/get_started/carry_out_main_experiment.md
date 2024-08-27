@@ -30,14 +30,17 @@
 
 実験サブフローメニューにあるフロー中の「実験に利用するデータを用意する」をクリックし、データ準備用のノートブック（下図）に遷移します。
 
-![](./images/carry_out_main_prepare_data.png)
+| ![](./images/carry_out_main_prepare_data.png) |
+|---|
 
 今回はローカル環境からデータをアップロードしますので、「1. ローカルPCから実験に利用するデータを用意する」セクションの手順を実施します。
 
 1. ダッシュボードビューを開く
     - ページ左上部の「File」をクリック後、「Open...」をクリックします。
 
-        ![](./images/carry_out_main_prepare_data_from_local01.png)
+        | ![](./images/carry_out_main_prepare_data_from_local01.png) |
+        |---|
+      
 2. アップロードする場所を開く
     - 左上部の<img src="./images/carry_out_main_prepare_data_from_local_folder_icon.png" height="15">→「data」→「experiment」→「experiment_main_data」→「experiment_main」の順序でクリックします。
 
