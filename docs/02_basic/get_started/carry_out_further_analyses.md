@@ -11,4 +11,4 @@
 * [「本実験を行う」](./carry_out_main_experiment.md)のステップで生成されたデータ。
 * [「実験結果の解析を行う」](./get_started/carry_out_analysis.md)のステップで生成されたデータ。
 
-本ステップを完了したら[次のステップに進みましょう](./create_paper.md)。
+本ステップを完了したら[次のステップに進みましょう](./validate_metadata.md)。
