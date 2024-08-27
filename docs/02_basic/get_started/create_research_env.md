@@ -12,11 +12,13 @@
 
 研究準備サブフローのサブフローメニューより「解析環境を構築する」をクリックし、遷移します。
 
-![](./images/create_research_env_setup13.png)
+| ![](./images/create_research_env_setup13.png) |
+|---|
 
 「解析環境を構築する手法を選択する」のコードセルを実行します。
 
-![](./images/create_research_env_setup14.png)
+| ![](./images/create_research_env_setup14.png) |
+|---|
 
 本チュートリアルではGakunin RDMの解析環境をこのまま利用して研究を進めます。
 
@@ -26,15 +28,18 @@
 
 サブフローメニューを表示し、完了した2つのフローに青いチェックマークが付いていることを確認します。
 
-![](./images/create_research_env_setup15.png)
+| ![](./images/create_research_env_setup15.png) |
+|---|
 
 「メインメニューを表示する」のコードセルを実行し、メインメニューへ遷移します。
 
-![](./images/create_research_env_setup16.png)
+| ![](./images/create_research_env_setup16.png) |
+|---|
 
 メインメニューにて「メインメニューを表示する」のコードセルを実行します。
 
-![](./images/create_research_env_setup17.png)
+| ![](./images/create_research_env_setup17.png) |
+|---|
 
 「アクションを選択してください」を表示され、サブフローの操作が可能になっていることを確認します。
 
