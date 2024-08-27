@@ -33,7 +33,7 @@
 | ![](./images/carry_out_main_prepare_data.png) |
 |---|
 
-今回はローカル環境からデータをアップロードしますので、「1. ローカルPCから実験に利用するデータを用意する」セクションの手順を実施します。
+今回はローカル環境からデータをアップロードしますので、「ローカルPCから実験に利用するデータを用意する」セクションの手順を実施します。
 
 1. ダッシュボードビューを開く
     - ページ左上部の「File」をクリック後、「Open...」をクリックします。
@@ -76,7 +76,8 @@ Jupyter Notebook を開き、前のセクションでアップロードしたフ
 
 #### 実験結果を同期する
 
-この操作は[「テスト実験を行う」における「実験結果を研究用リポジトリに同期する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様です。前節の各ノートブック実行ごとに途中結果を同期するのが良いでしょう。今回は各ノートブックの実行後の途中結果の同期時に下表のようにログメッセージを入力します。
+この操作は[「テスト実験を行う」における「実験結果を研究用リポジトリに同期する」](./carry_out_test_experiment.md#実験結果を研究用リポジトリに同期する)セクションでの操作と同様です。前節の各ノートブック実行ごとに途中結果を同期するのが良いでしょう。
+<!--今回は各ノートブックの実行後の途中結果の同期時に下表のようにログメッセージを入力します。
 
 |ノートブック|ログメッセージ|
 |:---|:---|
@@ -85,6 +86,7 @@ Jupyter Notebook を開き、前のセクションでアップロードしたフ
 | `03_calculate_exp_data.ipynb` | `execute a notebook which adds noise to Bragg spot intensity` |
 | `04_simulate_delay_time.ipynb` | `execute a notebook which simulates delay time of each nanocrystal` |
 | `05_arrange_data.ipynb` | `execute a notebook which arranges the simulative results` |
+-->
 
 なお、同期するデータのサイズが大きいほど、または同期するデータの数が多いほど、同期にかかる時間が長くなります。
 
