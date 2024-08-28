@@ -14,7 +14,8 @@
 
 「メインメニューを表示」のコードセルを実行し、メインメニューを表示します。
 
-![](./images/create_paper_prepare_main_menu.png)
+| ![](./images/create_paper_prepare_main_menu.png) |
+|---|
 
 「サブフロー操作」下部のプルダウンから、「サブフロー新規作成」を選択します。
 
@@ -30,22 +31,26 @@
 
 設定項目をすべて入力後、「＋新規作成」をクリックします。
 
-![](./images/create_paper_prepare_create_paper_node.png)
+| ![](./images/create_paper_prepare_create_paper_node.png) |
+|---|
 
 「サブフロー関係図」の「論文執筆」にある<img src="./images/create_paper_prepare_paper_node_icon.png" height=15>をクリックし、実験サブフローメニューに遷移します。
 
-![](./images/create_paper_sub_flow_menu.png)
+| ![](./images/create_paper_sub_flow_menu.png) |
+|---|
 
 研究準備や実験と同様に、背景が黄色となっているフロー図（下図）に従って操作を行います。
 
-![](./images/create_paper_sub_flow.png)
+| ![](./images/create_paper_sub_flow.png) |
+|---|
 
 
 #### 論拠データを整理する
 
 論文執筆サブフローメニューにあるフロー中の「論拠データを整理する」をクリックし、論拠データ整理用のノートブック（下図）に遷移します。
 
-![](./images/create_paper_organize_data.png)
+| ![](./images/create_paper_organize_data.png) |
+|---|
 
 #### 論文執筆に至る知見を得たデータ、プログラムの整理
 
