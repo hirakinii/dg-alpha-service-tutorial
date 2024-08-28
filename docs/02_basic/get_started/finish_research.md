@@ -3,7 +3,9 @@
 基本編の最後のステップとして、本サービスでの研究終了時の研究実行環境を削除する手順を実践します。この操作はボタンクリックと少しの画面遷移のみで完結します。
 
 「GakuNin RDM」のプロジェクトのトップページに戻り、ページ上部の「解析」をクリックしてページを移動します。
-![](./images/research_flow_finish_research2.png)
+
+| ![](./images/research_flow_finish_research2.png) |
+|---|
 
 「削除」にある![](./images/research_flow_finish_research2_icon.png)アイコンをクリックすることで、作成した研究実行環境が削除されます。
 
