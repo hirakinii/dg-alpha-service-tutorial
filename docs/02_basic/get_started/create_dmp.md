@@ -11,11 +11,13 @@
 
 [dg-researchflowsのリポジトリ](https://github.com/NII-DG/dg-researchflows)にアクセスします。
 
-![](./images/create_dmp_repository_download01.png)
+| ![](./images/create_dmp_repository_download01.png) |
+|---|
 
 ブランチ名が「master」になっていることを確認します。<img src="./images/create_dmp_repository_download_icon.png" width="60">をクリックし、「Download ZIP」をクリックしてZIPファイルを任意の場所にダウンロードします。
 
-![](./images/create_dmp_repository_download02.png)
+| ![](./images/create_dmp_repository_download02.png) |
+|---|
 
 ダウンロードしたZIPファイルを解凍します。
 
@@ -23,48 +25,70 @@
 
 [前のステップ](./create_project.md)で作成したプロジェクトのトップページに戻り、ページ上部の「ファイル」タブをクリックしてファイル管理画面（下図）に遷移します。
 
-![](./images/create_dmp_file_management.png)
+| ![](./images/create_dmp_file_management.png) |
+|---|
 
 「NII Storage」を選択し、「フォルダのアップロード」をクリックします。
 
-![](./images/create_dmp_select_nii_storage.png)
+| ![](./images/create_dmp_select_nii_storage.png) |
+|---|
 
 [前提作業](#dg-researchflowsのリポジトリをローカルにクローンする)で取得した「dg-researchflows」フォルダ内にある、「data_governance」「data」「.binder」フォルダをそれぞれアップロードします。（所要時間：約5分）
 
-![](./images/create_dmp_select_files.png)
-![](./images/create_dmp_uploaded_files01.png)
-![](./images/create_dmp_uploaded_files02.png)
+| ![](./images/create_dmp_select_files.png) |
+|---|
 
+| ![](./images/create_dmp_uploaded_files01.png) |
+|---|
+
+| ![](./images/create_dmp_uploaded_files02.png) |
+|---|
 #### 解析環境を構築する
 
 研究用プロジェクトの上部にある「アドオン」タブをクリックします。「アドオンを選択」から、「GakuNin Federated Computing Services (Jupyter)」を有効化します。
 
-![](./images/create_research_env_enable_addon01.png)
-![](./images/create_research_env_enable_addon02.png)
-![](./images/create_research_env_enable_addon03.png)
+| ![](./images/create_research_env_enable_addon01.png) |
+|---|
+
+| ![](./images/create_research_env_enable_addon02.png) |
+|---|
+
+| ![](./images/create_research_env_enable_addon03.png) |
+|---|
 
 アドオンを有効化したことにより、ページ上部に「解析」タブが出現します。「解析」タブをクリックします。
 
-![](./images/create_research_env_create_env01.png)
+| ![](./images/create_research_env_create_env01.png) |
+|---|
 
 ページ右側の「`新しい解析環境を作成: https://binder.cs.rcos.nii.ac.jp`」をクリックします。ビルド状況が「ready」になるまでお待ちください。
 
-![](./images/create_research_env_create_env02.png)
-![](./images/create_research_env_create_env03.png)
+| ![](./images/create_research_env_create_env02.png) |
+|---|
+
+| ![](./images/create_research_env_create_env03.png) |
+|---|
 
 この操作により、ページ上部の「私の解析環境」に解析環境が出現します。
 
-![](./images/create_research_env_create_env04.png)
+| ![](./images/create_research_env_create_env04.png) |
+|---|
 
 「起動」にある![](./images/create_research_env_create_env_jupyter_icon.png)アイコンをクリックすることで、作成した解析環境に遷移します。
 
-![](./images/create_research_env_create_env05.png)
+| ![](./images/create_research_env_create_env05.png) |
+|---|
 
 「data_gorvernance」フォルダ、「researchflow」フォルダを開き、「main.ipynb」をクリックし、メインメニューに遷移します。
 
-![](./images/create_research_env_create_env06.png)
-![](./images/create_research_env_create_env07.png)
-![](./images/create_research_env_create_env08.png)
+| ![](./images/create_research_env_create_env06.png) |
+|---|
+
+| ![](./images/create_research_env_create_env07.png) |
+|---|
+
+| ![](./images/create_research_env_create_env08.png) |
+|---|
 
 #### 解析環境の初期セットアップを行う
 
@@ -89,6 +113,7 @@
 
 | ![](./images/create_research_env_setup04.png) |
 |---|
+
 | ![](./images/create_research_env_setup05.png) |
 |---|
 
