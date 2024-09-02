@@ -11,7 +11,8 @@
 
 まずは[本サービス](https://rdm.nii.ac.jp/)にアクセスします。すでにログイン済みでなければ、下図のように本サービスのトップページが表示されています。
 
-![](./images/create_project_grdm_service_toppage.png)
+| ![](./images/create_project_grdm_service_toppage.png) |
+|---|
 
 #### 本サービスにログインする
 
@@ -21,17 +22,20 @@
 
 ログインに成功するとプロフィール修正画面に遷移します（下図）。
 
-![](./images/create_project_grdm_after_login.png)
+| ![](./images/create_project_grdm_after_login.png) |
+|---|
 
 本サービス上部のメニューバーにて、左上に配置されている「GakuNin RDM」をクリックし、ダッシュボードのページに遷移します。
 
-![](./images/create_project_grdm_dashboard.png)
+| ![](./images/create_project_grdm_dashboard.png) |
+|---|
 
 #### 新しくプロジェクトを作成する
 
 ページ右上の「新規プロジェクト作成」をクリックすると、ポップアップが出現します(下図)。「詳細」をクリックし、設定項目を展開します。
 
-![](./images/create_project_grdm_pop_up_new_project.png)
+| ![](./images/create_project_grdm_pop_up_new_project.png) |
+|---|
 
 出現したポップアップにて必要な設定項目を入力します。本チュートリアルでは下表のように入力します。これらの情報はプロジェクト作成後に変更可能です（[「プロジェクトの設定変更」](#プロジェクトの設定変更)を参照）。各項目を入力し、「作成」をクリックします。
 
@@ -43,11 +47,13 @@
 
 全ての情報を入力した後、ポップアップ下部にある「作成」ボタンをクリックします。これによりプロジェクトが生成されます（下図）。
 
-![](./images/create_project_grdm_created_new_project.png)
+| ![](./images/create_project_grdm_created_new_project.png) |
+|---|
 
 「プロジェクトへ移動」ボタンをクリックすることで、プロジェクトのトップページに遷移します（下図）。
 
-![](./images/create_project_grdm_project_toppage.png)
+| ![](./images/create_project_grdm_project_toppage.png) |
+|---|
 
 以上で本チュートリアルに必要なプロジェクトが作成できました。
 
@@ -55,25 +61,30 @@
 
 プロジェクトのトップページ上部にある「設定」をクリックすると、プロジェクトの設定ページにアクセスできます。必要に応じて設定を変更してください。
 
-![](./images/create_project_grdm_project_setting.png)
+| ![](./images/create_project_grdm_project_setting.png) |
+|---|
 
 #### パーソナルアクセストークンを発行する
 
 研究用プロジェクトの右上部にあるご自身の名前から、「設定」をクリックします。
 
-![](./images/create_research_env_prepare01.png)
+| ![](./images/create_research_env_prepare01.png) |
+|---|
 
 左部にある「設定」メニュー（下図）から、「パーソナルアクセストークン」をクリックします。
 
-![](./images/create_research_env_prepare02.png)
+| ![](./images/create_research_env_prepare02.png) |
+|---|
 
 パーソナルアクセストークンを発行します。「パーソナルアクセストークン」の右部にある「新規トークン」をクリックします。
 
-![](./images/create_research_env_prepare03.png)
+| ![](./images/create_research_env_prepare03.png) |
+|---|
 
 トークン名に任意の名前（本チュートリアルでは「tutorial_token」とします）を入力し、全てのスコープにチェックを付けます。
 
-![](./images/create_research_env_prepare04.png)
+| ![](./images/create_research_env_prepare04.png) |
+|---|
 
 「作成」をクリックします。トークンIDは[次のステップ](./create_dmp.md)で使用するため、メモしてください。**この画面を離れると、トークンは二度と表示されません。**
 
