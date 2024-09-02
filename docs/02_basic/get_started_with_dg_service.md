@@ -26,8 +26,8 @@
 
 * [（オプション）DG-Webを利用したメタデータ検証](./option_dgweb.md)
 * [（オプション）Governed Run 機能を利用した計算実験の再現性の検証](./option_governed_run.md)
-* [（オプション）DG-CORE の基本的な機能の使い方の学習開始](./how_to_use_dg_core.md)
 * [基本編のまとめ](./summary.md)
+<!-- * [（オプション）DG-CORE の基本的な機能の使い方の学習開始](./how_to_use_dg_core.md) -->
 
 ## 移動用リンク
 
