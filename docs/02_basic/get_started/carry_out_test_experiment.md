@@ -92,7 +92,6 @@
 
 実験パッケージの作成が完了後、「Gakunin RDMに保存する」のコードセルを実行します。
 
-★差し替え予定
 | ![](./images/carry_out_test_ex_prepare_env_02.png) |
 |---|
 
