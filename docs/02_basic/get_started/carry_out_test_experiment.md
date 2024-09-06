@@ -39,7 +39,7 @@
 | ![](./images/carry_out_test_prepare_create_ex_node.png) |
 |---|
 
-「サブフロー関係図」の「実験」にある<img src="./images/carry_out_test_prepare_ex_node_icon.png" height=15>をクリックし、実験サブフローメニューに遷移します。
+「サブフロー関係図」の「実験」にある<img src="./images/carry_out_test_prepare_ex_node_icon.png" height=20>をクリックし、実験サブフローメニューに遷移します。
 
 | ![](./images/carry_out_test_ex_sub_flow_menu.png) |
 |---|
@@ -61,7 +61,7 @@
 | ![](./images/carry_out_test_ex_prepare_env_01.png) |
 |---|
 
-「研究分野」はプルダウンから「ライフサイエンス」を選択し、「推奨実験パッケージの利用有無」は「利用する（デフォルト）」とします。「確定」をクリックします。
+「研究分野」はプルダウンから「ライフサイエンス」を選択し、「推奨実験パッケージの利用有無」は「利用する（デフォルト）」とします。「確定する」をクリックします。
 
 処理が完了すると下図のように表示されます。
 
@@ -81,7 +81,7 @@
 | pypi_username | （PyPIのユーザー名を入力してください） |
 | （以下の設定は変更の必要はありません） |
 
-入力が完了したら「確定」をクリックします。「実験パッケージを/home/jovyan/data/experiment/experiment_test_dataに作成しました。」と表示されれば完了です。
+入力が完了したら「確定する」をクリックします。「実験パッケージを/home/jovyan/data/experiment/experiment_test_dataに作成しました。」と表示されれば完了です。
 
 本ステップで作成した実験パッケージはjupyterの以下のディレクトリに作成されます。
 
@@ -97,7 +97,11 @@
 
 テキストボックスが表示された場合、パーソナルアクセストークンを入力し、「保存する」をクリックします。
 
-「Gakunin RDMへの同期が完了しました。」と表示されるまで待機し、サブフローメニューへ戻ります。
+「Gakunin RDMへの同期が完了しました。」が表示されたら同期成功です。<br>
+※同期完了まで10分～15分程度時間がかかります。
+
+同期完了後、「サブフローメニューを表示する」のセルを実行し、サブフローメニューへ遷移します。
+
 
 | ![](./images/carry_out_test_ex_sub_flow_01.png) |
 |---|
@@ -152,7 +156,7 @@ source ディレクトリに移動します。ページ右上にある「New」�
 | ![](./images/carry_out_test_ex_analysis_source_new.png) |
 |---|
 
-このノートブックは通常の Jupyter Notebook のそれと同じように操作することが可能です。ノートブックページの左上にノートブックの名前が表示されています。その名前をクリックし、`hello_world` に変更します。
+このノートブックは通常の Jupyter Notebook と同じように操作することが可能です。ノートブックページの左上にノートブックの名前が表示されています。名前（Untitled）をクリックし、`hello_world` に変更します。
 
 | ![](./images/carry_out_test_ex_analysis_source_new_rename01.png) |
 |---|
@@ -210,8 +214,7 @@ np.save("../output_data/hello_world_y.npy", y)
 | ![](./images/carry_out_test_ex_analysis_02.png) |
 |---|
 
-「Gakunin RDMへの同期が完了しました。」が表示されたら同期成功です。
-
+「Gakunin RDMへの同期が完了しました。」が表示されたら同期成功です。<br>
 ※同期完了まで10分～15分程度時間がかかります。
 
 同期完了後、「サブフローメニューを表示する」のセルを実行し、サブフローメニューへ遷移します。
@@ -292,7 +295,7 @@ np.save("../output_data/hello_world_y.npy", y)
 
 ```
 
-以上の文を入力した後、`README.md` 編集画面中のメニューバーから「File」→「Save」をクリックして更新内容を保存します。なお、Jupyter Notebook のキーボードショートカットを利用して更新内容を保存することも可能です。
+以上の文を入力した後、`README.md` 編集画面中のメニューバーから「File」→「Save」をクリックして更新内容を保存します。または、Jupyter Notebook のキーボードショートカットを利用して更新内容を保存することも可能です。
 
 更新内容の保存後、`README.md` 編集画面を閉じて「解析結果を参照する」ノートブックに移動します。そして「Gakunin RDMに保存する」セクションのセルを実行します。「Gakunin RDMへの同期が完了しました。」が表示されたら同期成功です。
 
