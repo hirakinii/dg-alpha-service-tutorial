@@ -161,3 +161,4 @@ cython_debug/
 
 # Exclusive data
 *.pptx
+output_data/
