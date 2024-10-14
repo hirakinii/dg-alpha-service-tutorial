@@ -1,0 +1,6 @@
+jupyterlab
+h5py
+matplotlib
+numpy
+scikit-image
+scipy
